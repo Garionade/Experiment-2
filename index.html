@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1>Una Noche de Lluvia</h1>
+        <p id="story">Estás en una calle desierta bajo la lluvia. Ves dos caminos: uno oscuro y estrecho a la izquierda, y otro iluminado a la derecha. ¿Cuál eliges?</p>
+        <button onclick="choosePath('izquierda')">Camino Izquierdo</button>
+        <button onclick="choosePath('derecha')">Camino Derecho</button>
+        <br><br>
+        <button id="playSound">🔊 Activar Sonido</button>
+    </div>
+
+    <!-- Efecto de sonido de lluvia -->
+    <audio id="rainSound" loop>
+        <source src="rain.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
